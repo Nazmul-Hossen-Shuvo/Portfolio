@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin | Nazmul Hossen Shuvo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@6.4.0/css/all.min.css">
+    <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+    <main class="admin-main">
+        <a class="admin-back-link" href="index.html">← Back to website</a>
+        <header class="admin-header">
+            <h1>Website Admin</h1>
+            <p>Sign in to update the public website content.</p>
+        </header>
+
+        <p id="admin-status" class="admin-status" role="status" aria-live="polite"></p>
+
+        <form id="admin-login" class="admin-panel">
+            <h2>Admin sign in</h2>
+            <label for="admin-email">Email</label>
+            <input id="admin-email" name="email" type="email" autocomplete="username" required>
+            <label for="admin-password">Password</label>
+            <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+            <button type="submit" class="submit-btn">Sign in</button>
+            <button id="admin-create-account" type="button" class="text-button">Create the admin account</button>
+        </form>
+
+        <section id="admin-editor" class="admin-panel" hidden>
+            <div class="admin-editor-heading">
+                <div>
+                    <h2>Edit website content</h2>
+                    <p>Change text fields directly. Add or remove items in the experience, FAQ, and blog sections as needed. Blog thumbnails accept image URLs or site-relative image paths.</p>
+                </div>
+                <button id="admin-sign-out" class="text-button" type="button">Sign out</button>
+            </div>
+            <form id="content-form">
+                <div id="content-fields"></div>
+                <button id="save-content" type="submit" class="submit-btn">Save and publish</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

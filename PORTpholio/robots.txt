@@ -1,0 +1,39 @@
+# robots.txt for PORTpholio website
+# This file tells search engine crawlers which pages to crawl and which to avoid
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /blog.html
+Allow: /css/
+Allow: /js/
+
+# Disallow crawling of unnecessary files and directories
+Disallow: /firebase.json
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /*/.DS_Store
+
+# Specific rules for common crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Crawl-delay: 10
+User-agent: DotBot
+Disallow: /
+
+# Sitemap reference
+Sitemap: https://nazmul-hossen-shuvo.web.app/sitemap.xml
+
